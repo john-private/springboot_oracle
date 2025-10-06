@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: oracle-config
+data:
+  SPRING_DATASOURCE_URL: jdbc:oracle:thin:@192.168.122.1:1521/XEPDB1
+  SPRING_DATASOURCE_DRIVER_CLASS_NAME: oracle.jdbc.OracleDriver
+  SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.OracleDialect
